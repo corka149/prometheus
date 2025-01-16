@@ -75,7 +75,7 @@ services:
     networks:
       - back-tier
     command:
-      - "--nginx.scrape-uri=http://hub.docker.internal:8080/stub_status"
+      - "--nginx.scrape-uri=http://hub.docker.internal:8084/metrics"
     restart: always  
     extra_hosts:
       - "hub.docker.internal:host-gateway"
