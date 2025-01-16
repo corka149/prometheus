@@ -75,7 +75,7 @@ services:
     networks:
       - back-tier
     command:
-      - "--nginx.scrape-uri=http://host.docker.internal:8084/metrics"
+      - "--nginx.scrape-uri=http://host.docker.internal/metrics"
     restart: always  
     extra_hosts:
       - "host.docker.internal:host-gateway"
